@@ -1,0 +1,99 @@
+<style>
+    body{
+        text-align: center;
+    }
+    .bordered{
+        border: 2px solid black;
+    }
+    .results,
+    .toppings-wrapper,
+    .toppings-wrapper .bordered{
+        width:auto;
+        margin:auto;
+    }
+</style>
+<body>
+    <label>
+        Number of Scoops:
+        <input id="scoopsInput" type="number" value="1">
+    </label>
+    <div class="cone-cups">
+        <label>
+            <input type="radio" name="container" value="cone">
+            Cone
+        </label>
+        <label>
+            <input type="radio" name="container" value="cup" checked>
+            Cup
+        </label>
+    </div>
+    <div class="toppings-wrapper">
+        <h3>
+            Toppings:
+        </h3>
+        <table class="bordered">
+            <tr>
+                <td>
+                    <label>
+                        <input type="checkbox" value="sprinkles">
+                        Sprinkles <span id="sprPrice">($.50)</span>
+                    </label>
+                </td>
+                <td>
+                    <label>
+                        <input type="checkbox" value="whipped">
+                        Whipped Cream <span id="whpdPrice">($.25)</span>
+                    </label>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label>
+                        <input type="checkbox" value="fudge">
+                        Hot Fudge <span id="fdgPrice">($1.25)</span>
+                    </label>
+                </td>
+                <td>
+                    <label>
+                        <input type="checkbox" value="cherry">
+                        Cherry <span id="chryPrice">($.25)</span>
+                    </label>
+                </td>
+            </tr>
+        </table>
+        <button id="submitOrder">
+            Submit Order
+        </button>
+    </div>
+        <table class="results">
+            <tr>
+                <td>
+                    Base: Price
+                </td>
+                <td id="basePriceOutput">
+                    $0.0
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    Tax:
+                </td>
+                <td id="basePriceOutput">
+                    $0.0
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    Total Due:
+                </td>
+                <td id="basePriceOutput">
+                    $0.0
+                </td>
+            </tr>
+        </table>
+    </div>
+</body>
+<script>
+
+
+</script>
